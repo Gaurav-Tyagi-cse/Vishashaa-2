@@ -1,0 +1,173 @@
+@media (max-width:800px) {
+    main-inc{
+        width: 98%;
+        margin: 0 auto;
+        
+    
+    }
+
+    .abt-cov{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .abt-tc{
+        width: 100%;
+    }
+    
+    .abt-img{
+        width: 100%;
+        min-height: 300px;
+        
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .ions{
+        display: none;
+    }
+
+
+    .row-se {
+        padding: 20px;
+    }
+
+    .inf-section h1 {
+        font-size: 24px;
+    }
+
+    .inf-section p {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .info-section {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .info-teco {
+        flex: 1 1 100%;
+    }
+
+
+    .heading-home {
+        font-size: 20px;
+    }
+    
+    .section-home h3 {
+        font-size: 12px;
+    }
+
+    .section-home p {
+        font-size: 10px;
+    }
+
+
+
+    .product-section {
+        flex-direction: column;
+    }
+
+    .left-prsection, .main-content {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+
+@media (max-width:700px) {
+    .contact-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .contact-part1 {
+        width: 100%;
+    }
+
+    .contact-part2 {
+        width: 100%;
+    }
+}
+
+
+
+@media (max-width:500px) {
+    .navigation{
+        flex-direction: column;
+        align-items: start;
+        height: 45px;
+        overflow: hidden;
+        padding: 0;
+    }
+    .nav-links{
+        height: 0;
+        padding:  0;
+    
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    position: relative;
+    overflow: hidden;
+    }
+    .navigation i{
+        display: block;
+        /* margin-top: 5px; */
+      }
+
+
+    .logo-inc-img{
+        flex-basis: 30%;
+        height: 50px;
+        margin: 2px 0;
+    }
+    .logo-inc-img img{
+        width: 50px;
+        border-radius: 50%;
+    }
+    .logo-inc-img2 img{
+        width: 50px;
+    }
+    .logo-inc-name h2{
+        font-size: 20px;
+    }
+    .logo-inc-name p{
+        font-size: 11px;
+    }
+
+    .cnt h6{
+        font-size: 13px;
+        /* text-align: end; */
+    }
+     .cnt p{
+        font-size: 11px;
+        /* text-align: end; */
+    }
+    .cnt{
+        border:none;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .inf-section h1 {
+        font-size: 20px;
+    }
+
+    .info-teco h2 {
+        font-size: 16px;
+    }
+
+    .info-teco p {
+        font-size: 13px;
+    }
+
+    .inf-icons {
+        font-size: 30px;
+    }
+}

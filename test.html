@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blouses</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Body Styling */
+        .main-product {
+            display: flex;
+            justify-content: center;
+            /* padding: 20px; */
+            width: 90%;
+            margin: 20px auto;
+            background-color: #ffffff;
+        }
+
+        /* product-section Styling */
+        .product-section {
+            display: flex;
+            /* max-width: 1200px; */
+            width: 100%;
+        }
+
+        /* left-prsection Styling */
+        .left-prsection {
+            width: 25%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            margin-right: 20px;
+        }
+
+        .left-prsection h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .left-prsection .pro-category, .left-prsection .pro-search, .left-prsection .top-rated {
+            margin-bottom: 20px;
+        }
+
+        .left-prsection ul {
+            list-style: none;
+        }
+
+        .left-prsection ul li {
+            margin-bottom: 5px;
+        }
+
+        .left-prsection input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        /* Main Content Styling */
+        .main-content {
+            width: 75%;
+        }
+
+        .main-content h1 {
+            font-size: 24px;
+            color: #002a80;
+            margin-bottom: 10px;
+        }
+
+        .main-content .sorting {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 20px;
+        }
+
+        .main-content .sorting select {
+            padding: 5px;
+            font-size: 14px;
+        }
+
+        /* Product Grid */
+        .pro-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+           
+        }
+
+        .proitems-section {
+            text-align: center;
+        }
+
+        .proitems-section img {
+            width: 100%;
+            max-width: 180px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            height: 300px;
+        }
+
+        .proitems-section .product-name {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        /* Responsive Styling */
+        @media (max-width: 768px) {
+            .product-section {
+                flex-direction: column;
+            }
+
+            .left-prsection, .main-content {
+                width: 100%;
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-product">
+    <div class="product-section">
+        <!-- left-prsection -->
+        <div class="left-prsection">
+            <div class="pro-category">
+                <h3>Product Categories</h3>
+                <ul>
+                    <li><a href="product.html">Indian Wear Section</a></li>
+                    <li><a href="product2.html">Western Wear Section</a></li>
+                    <li><a href="product3.html">Indo-Western Wear</a></li>
+                </ul>
+            </div>
+            <div class="pro-search">
+                <h3>search</h3>
+                <input type="text" placeholder="search products...">
+            </div>
+            <div class="top-rated">
+                <h3>Top Rated Products</h3>
+                <ul>
+                    <li><a href="#">Viscose lurex printed dress</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <h1>Indian Wear Section</h1>
+            <p>Showing all results</p>
+            
+            <div class="sorting">
+                <select>
+                    <option>Default sorting</option>
+                    <option>Sort by popularity</option>
+                    <option>Sort by rating</option>
+                    <option>Sort by latest</option>
+                    <option>Sort by price: low to high</option>
+                    <option>Sort by price: high to low</option>
+                </select>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="pro-section">
+                <div class="proitems-section">
+                    <img src="Images/pro-in-1.jpg" alt="Modal Blouse">
+                    <p class="product-name">Product name</p>
+                </div>
+                <div class="proitems-section">
+                    <img src="Images/pro-in-2.jpg" alt="Moss Crepe Blouse">
+                    <p class="product-name">Product name</p>
+                </div>
+                <div class="proitems-section">
+                    <img src="Images/pro-in-3.jpg" alt="Poly Georgette Blouse">
+                    <p class="product-name">Product name</p>
+                </div>
+                <div class="proitems-section">
+                    <img src="Images/pro-in-4.jpg" alt="Poly Moss Blouse">
+                    <p class="product-name">Product name</p>
+                </div>
+                <div class="proitems-section">
+                    <img src="Images/pro-in-5.jpg" alt="Modal Blouse">
+                    <p class="product-name">Product name</p>
+                </div>
+                <div class="proitems-section">
+                    <img src="Images/pro-in-6.jpg" alt="Moss Crepe Blouse">
+                    <p class="product-name">Product name</p>
+                </div>
+                <div class="proitems-section">
+                    <img src="Images/pro-in-7.jpg" alt="Poly Georgette Blouse">
+                    <p class="product-name">Product name</p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
